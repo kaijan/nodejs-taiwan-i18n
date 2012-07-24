@@ -41,7 +41,7 @@ app.configure(function() {
 i18n.configure({
     // setup some locales - other locales default to en silently
     // case-sensitive, lowerCase
-    locales:['zh-tw','zh']
+    locales:['zh-tw','zh','en']
 });
 
 
