@@ -11,7 +11,6 @@ Validator.prototype.handleRequest = function(req, res, next) {
 
   if (!res.result){
     res.result={};
-    // console.log('info', "["+ req.method +"] - "+ req.url);
   }
 
   next();
@@ -22,7 +21,7 @@ Validator.prototype.handleRender = function(req, res) {
 
   var handler = "Validator.handleRender";
 
-  res.render(res.result.rPage);
+  console.log('\n');
 
-  console.log('info', "[RENDER] - "+ res.result.rPage +"\n");
+  res.render(res.result.rPage);
 };
