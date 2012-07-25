@@ -17,11 +17,11 @@ var Project = {
 
 
 
-i18n.configure({
-    // setup some locales - other locales default to en silently
-    // case-sensitive, lowerCase
-    locales:['zh-tw','zh']
-});
+// i18n.configure({
+//     // setup some locales - other locales default to en silently
+//     // case-sensitive, lowerCase
+//     locales:['zh-tw','zh']
+// });
 
 
 // ==================
@@ -34,7 +34,9 @@ app.configure(function() {
   app.use(Validator.handleRequest);
 
 
-  app.use(i18n.init); // using 'accept-language' header to guess language settings
+  // app.use(i18n.init); // using 'accept-language' header to guess language settings
+
+
 
   app.set('views',Project.static_path);
   app.set('view engine', 'jade');
@@ -47,28 +49,17 @@ app.configure(function() {
 
 
 
-app.locals({
-  __i: i18n.__,
-  __n: i18n.__n
-});
-
-
-
-
-// console.log('HelloWorld: '+ i18nText['HelloWorld']);
 
 
 
 
 
-
-
-
-// app.use(i18nText);
-// app.use(function(req, res, next) {
-//   res.locals.i18nText = i18nText;
-//   next();
+// app.locals({
+//   __i: i18n.__,
+//   __n: i18n.__n
 // });
+
+
 
 
 

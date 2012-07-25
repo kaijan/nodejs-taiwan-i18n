@@ -3,14 +3,10 @@ extends layout
 block content
 
   //- simple i18n
-  div #{__i('HelloWorld')}
+  //- div #{__i('HelloWorld')}
 
   //- i18n with variable 
-  div #{__i('HelloGroup', 'node.js', 30)}  
+  //- div #{__i('HelloGroup', 'node.js', 30)}  
 
   //- i18n singular  vs plural
-  div #{__n('There is one monkey in the %%s', 'There are %d monkeys in the %%s', 3, 'tree')} 
-
-
-  //- i18n without method 
-  //- div #{i18nText['HelloWorld']} 
+  //- div #{__n('There is one monkey in the %%s', 'There are %d monkeys in the %%s', 3, 'tree')} 

@@ -10,11 +10,11 @@ app.get('/detectLanguage',
   function(req, res,next){
 
 
-    console.log('set to: '+ i18n.getLocale());
+    // console.log('set to: '+ i18n.getLocale());
     
 
-    console.log(i18n.__('HelloWorld'));
-    console.log(i18n.__('HelloGroup', 'Node.js', 30));
+    // console.log(i18n.__('HelloWorld'));
+    // console.log(i18n.__('HelloGroup', 'Node.js', 30));
     
 
     res.result.rPage = 'index';
